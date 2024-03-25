@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <input type="text" placeholder="Search" class="search-bar">
+            </div>
+            <div id="chatList" class="chat-list"></div>
+            <!-- Pagination controls -->
+            <div class="pagination-controls">
+                <button id="prevPage">Previous</button>
+                <span id="currentPage">1</span>
+                <button id="nextPage">Next</button>
+            </div>
+        </aside>
+        <section class="chat-display">
+            <div class="top-bar">
+                <div id="selectedChatName" class="selected-conversation-details">
+                    <span class="conversation-name">Select a chat</span>
+                    <!-- Remove the phone number span if not needed or dynamically populate it -->
+                </div>
+            </div>
+            <div id="messagesContainer" class="messages">
+                <!-- Messages will be displayed here -->
+            </div>
+            <footer class="chat-footer">
+                <input id="messageInput" type="text" placeholder="Type a message" class="message-input">
+                <button id="sendMessageButton" class="send-button"><i class="fas fa-paper-plane"></i></button>
+            </footer>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>

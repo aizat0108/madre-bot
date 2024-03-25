@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "Simple bot for chat-api.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "A.K.",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.14",
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.28.4",
+    "react-bootstrap": "^2.10.2"
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^8.0.1"
+  }
+}
